@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+body{
+    margin: 0;
+    background: #f5f5dc;
+    font-family: sans-serif;
+    color: #c5c5c5;
+}
+
+h1{
+    font-family: 'Vina Sans', sans-serif;
+    font-size: 4em;
+    z-index: 20;
+    text-shadow: 5px 5px 5px black;
+    text-align: center;
+}
+
+footer{
+    font-family: 'Vina Sans', sans-serif;
+    font-size: 1.4em;
+    position: absolute;
+    left: 50%;
+    top: 120%;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+
+.container{
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 900px;
+}
+
+.carrossel{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate360 40s infinite forwards linear;
+}
+
+.imagem{
+    position: absolute;
+    width: 290px;
+    height: 187px;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    display: flex;
+}
+
+.imagem span{
+    margin: auto;
+    font-size: 1.2em;
+    text-align: center;
+    color: black;
+}
+
+@keyframes rotate360{
+    from{
+        transform: rotateY(0deg);
+    }
+
+    to{
+        transform: rotateY(-360deg);
+    }
+}
+
+.imagem:nth-child(1){
+    background-image: url(https://thumbor.novaescola.org.br/4vBCRS9UVR_Lrr5DVZ8gi8XGY5g=/nova-escola-producao.s3.amazonaws.com/EPsn7yueDaw9ARXHQUyvAEXDcbbmbZ2AuxezPpKxf6hZnAbRhRpTewWt5wPC/socrates.jpg);
+    transform: rotateY(0deg) translateZ(430px);
+}
+
+.imagem:nth-child(2){
+    background-image: url(https://www.oguiademilao.com/wp-content/uploads/2017/09/5-Curiosidades-sobre-Leonardo-da-Vinci.jpg);
+    transform: rotateY(40deg) translateZ(430px);
+}
+
+.imagem:nth-child(3){
+    background-image: url(https://clinicand.com/wp-content/uploads/2018/12/Gustave_Courbet_033.jpg);
+    transform: rotateY(80deg) translateZ(430px);
+}
+
+.imagem:nth-child(4){
+    background-image: url(https://i2.wp.com/24smi.org/public/media/2017/12/18/04.JPG);
+    transform: rotateY(120deg) translateZ(430px);
+}
+
+.imagem:nth-child(5){
+    background-image: url(https://auniao.pb.gov.br/noticias/caderno_cultura/morte-de-nikola-tesla-genio-da-eletricidade-completa-74-anos/n-tesla.jpg/@@images/0f277d8d-9159-4a97-b592-859f635454e9.jpeg);
+    transform: rotateY(160deg) translateZ(430px);
+}
+
+.imagem:nth-child(6){
+    background-image: url(https://cartanaescola.com.br/wp-content/uploads/2022/09/Biografia-de-William-Shakespeare.jpg);
+    transform: rotateY(200deg) translateZ(430px);
+}
+
+.imagem:nth-child(7){
+    background-image: url(https://cdn.jornaldebrasilia.com.br/wp-content/uploads/2020/10/811313-full-size-charles-darwin-wallpapers-3000x1688-1-1024x576.jpg);
+    transform: rotateY(240deg) translateZ(430px);
+}
+
+.imagem:nth-child(8){
+    background-image: url(https://static.todamateria.com.br/upload/ma/rt/martinlutherking-cke.jpg);
+    transform: rotateY(280deg) translateZ(430px);
+}
+
+.imagem:nth-child(9){
+    background-image: url(https://www.netmundi.org/filosofia/wp-content/uploads/2017/09/aristoteles-620x264.jpg);
+    transform: rotateY(320deg) translateZ(430px);
+}
